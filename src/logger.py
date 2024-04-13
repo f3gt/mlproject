@@ -17,9 +17,3 @@ logging.basicConfig(
 
 if __name__=="__main__":
     logging.info("Logging has started")
-
-    try:
-        a=1/0
-    except:
-        logging.info("logging has started")
-        raise CustomException

@@ -1,0 +1,77 @@
+<html>
+<body>
+    <div class="login">
+       <h1>Student Exam Performance Indicator</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h1>
+            <legend>Heart attack Prediction</legend>
+        </h1>
+        <div class="form-group">
+            <label for="age">Age in Years</label>
+            <input class="form-control" type="number" name="age" placeholder="eg. 34" required="required"/>
+         </div>
+          <div class="form-group">
+            <label for="trestbps">Trest Bps</label>
+            <input class="form-control" type="number" name="trtbps" placeholder="trtbps" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="chol">Cholesterol</label>
+            <input class="form-control" type="number" name="chol" placeholder="chol" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="thalach">Thalach</label>
+            <input class="form-control" type="number" name="thalachh" placeholder="thalachh" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="oldpeak">Old Peak</label>
+            <input class="form-control" type="number" name="oldpeak" placeholder="oldpeak" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="sex_0">Sex</label>
+            <input class="form-control" type="number" name="sex" placeholder="sex" required="required"/>
+          </div>
+          
+          <div class="form-group">
+            <label for="CP_0">CP_0</label>
+            <input class="form-control" type="number" name="CP_0" placeholder="CP_0" required="required"/>
+          </div>
+        
+          <div class="form-group">
+            <label for="fbs_0">FBS_0</label>
+            <input class="form-control" type="number" name="fbs" placeholder="fbs" required="required"/>
+          </div>
+          <div class="form-group">
+            <label for="restecg_0">RESTECG</label>
+            <input class="form-control" type="number" name="restecg" placeholder="restecg" required="required"/>
+          </div>
+        
+          <div class="form-group">
+            <label for="exang_0">EXANG_0</label>
+            <input class="form-control" type="number" name="exng" placeholder="exng" required="required"/>
+          </div>
+          
+        
+        
+          <div class="form-group">
+            <label for="slope_0">SLOPE_0</label>
+            <input class="form-control" type="number" name="slp" placeholder="slp" required="required"/>
+          </div>
+          
+          
+          <div class="form-group">
+            <label for="CA_1">CA_1</label>
+            <input class="form-control" type="number" name="caa" placeholder="caa" required="required"/>
+          </div>
+        
+          <div class="form-group">
+            <label for="THAL_1">THAL_1</label>
+            <input class="form-control" type="number" name="thall" placeholder="thall" required="required"/>
+          </div>
+          
+    </form>
+    <h2>
+       THE  prediction is {{results}}
+    </h2>
+  </body>
+</html>
