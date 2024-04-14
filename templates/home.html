@@ -1,7 +1,7 @@
 <html>
 <body>
     <div class="login">
-       <h1>Student Exam Performance Indicator</h1>
+       <h1>Heart Attack Analysis and Prediction</h1>
    
        <form action="{{ url_for('predict_datapoint')}}" method="post">
         <h1>
@@ -20,7 +20,7 @@
             <input class="form-control" type="number" name="chol" placeholder="chol" required="required"/>
           </div>
           <div class="form-group">
-            <label for="thalach">Thalach</label>
+            <label for="thalachh">Thalach</label>
             <input class="form-control" type="number" name="thalachh" placeholder="thalachh" required="required"/>
           </div>
           <div class="form-group">
@@ -28,26 +28,26 @@
             <input class="form-control" type="number" name="oldpeak" placeholder="oldpeak" required="required"/>
           </div>
           <div class="form-group">
-            <label for="sex_0">Sex</label>
+            <label for="sex">sex</label>
             <input class="form-control" type="number" name="sex" placeholder="sex" required="required"/>
           </div>
           
           <div class="form-group">
-            <label for="CP_0">CP_0</label>
+            <label for="cp">cp</label>
             <input class="form-control" type="number" name="CP_0" placeholder="CP_0" required="required"/>
           </div>
         
           <div class="form-group">
-            <label for="fbs_0">FBS_0</label>
+            <label for="fbs">fbs</label>
             <input class="form-control" type="number" name="fbs" placeholder="fbs" required="required"/>
           </div>
           <div class="form-group">
-            <label for="restecg_0">RESTECG</label>
+            <label for="restecg">restecg</label>
             <input class="form-control" type="number" name="restecg" placeholder="restecg" required="required"/>
           </div>
         
           <div class="form-group">
-            <label for="exang_0">EXANG_0</label>
+            <label for="exng">exng</label>
             <input class="form-control" type="number" name="exng" placeholder="exng" required="required"/>
           </div>
           
@@ -68,6 +68,13 @@
             <label for="THAL_1">THAL_1</label>
             <input class="form-control" type="number" name="thall" placeholder="thall" required="required"/>
           </div>
+
+          <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Submit and Predict" required />
+        </div>
+
+
+          
           
     </form>
     <h2>

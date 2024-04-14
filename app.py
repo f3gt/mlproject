@@ -15,10 +15,11 @@ def predict_datapoint():
         return render_template('home.html')
     else:
         data = CustomData(
-            sex=request.form.get('sex'),
+            
             age=request.form.get('age'),
+            sex=request.form.get('sex'),
             cp=request.form.get('cp'),
-            trtbs=request.form.get('trtbs'),
+            trtbs=request.form.get('trtbps'),
             chol=request.form.get('chol'),
             fbs=request.form.get('fbs'),
             restecg=request.form.get('restecg'),

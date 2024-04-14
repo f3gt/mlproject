@@ -1,4 +1,5 @@
 import os
+
 import sys
 
 from dataclasses import dataclass
@@ -36,7 +37,7 @@ from src.logger import logging
 @dataclass
 class ModelTrainerConfig:
 
-    trained_model_file_path=os.path.join("artifacts","model.pkl")
+    trained_model_file_path=os.path.join("artifact","model.pkl")
 
 class ModelTrainer:
     def __init__(self):
